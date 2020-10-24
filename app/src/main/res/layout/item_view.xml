@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="72dp"
+  app:layoutDescription="@xml/item_view_scene">
+  
+  <TextView
+    android:id="@+id/name"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:padding="16dp"
+    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:text="@tools:sample/lorem" />
+  
+  <View
+    android:id="@+id/dragView"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:background="@android:color/holo_red_light" />
+  
+  <ImageView
+    android:id="@+id/icon"
+    android:layout_width="24dp"
+    android:layout_height="24dp"
+    android:src="@drawable/ic_archive"
+    tools:ignore="ContentDescription" />
+  
+</androidx.constraintlayout.motion.widget.MotionLayout>

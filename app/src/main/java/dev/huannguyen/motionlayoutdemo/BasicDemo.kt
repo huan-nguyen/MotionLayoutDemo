@@ -3,9 +3,9 @@ package dev.huannguyen.motionlayoutdemo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class Demo1Activity : AppCompatActivity() {
+class BasicDemo : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_demo1)
+        setContentView(R.layout.basic_demo_activity)
     }
 }

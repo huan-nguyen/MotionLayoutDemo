@@ -7,16 +7,18 @@ import android.util.TypedValue
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.setPadding
-import kotlinx.android.synthetic.main.activity_main.container
-import java.util.Dictionary
+import dev.huannguyen.motionlayoutdemo.databinding.MainActivityBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: MainActivityBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = MainActivityBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        addDemo<Demo1Activity>("Basic Animation")
-        addDemo<FabDemoActivity>("Fab Animation")
+        addDemo<BasicDemo>("Basic Animation")
+        addDemo<ViewHolderSwipeDemo>("ViewHolder Swipe Animation")
     }
 
     private inline fun <reified T: Activity> addDemo(name: String) {
@@ -28,6 +30,6 @@ class MainActivity : AppCompatActivity() {
             context.theme.resolveAttribute(android.R.attr.selectableItemBackground, typedValue, true)
             setBackgroundResource(typedValue.resourceId)
         }
-        container.addView(view)
+        binding.container.addView(view)
     }
 }

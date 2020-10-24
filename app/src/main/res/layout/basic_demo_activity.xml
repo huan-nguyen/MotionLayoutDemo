@@ -5,7 +5,7 @@
     android:id="@+id/motionLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/demo1_scenes"
+    app:layoutDescription="@xml/basic_demo_scene"
     tools:showPaths="true">
 
     <View
