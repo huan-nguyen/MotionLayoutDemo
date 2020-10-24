@@ -17,8 +17,9 @@ class MainActivity : AppCompatActivity() {
         binding = MainActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        addDemo<BasicDemo>("Basic Animation")
-        addDemo<ViewHolderSwipeDemo>("ViewHolder Swipe Animation")
+        addDemo<BasicDemo>("Basic Demo")
+        addDemo<ViewHolderSwipeDemo>("ViewHolder Swipe Demo")
+        addDemo<CollapsibleToolbarDemo>("Collapsible Toolbar Demo")
     }
 
     private inline fun <reified T: Activity> addDemo(name: String) {

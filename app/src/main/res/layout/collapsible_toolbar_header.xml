@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/header"
+  android:layout_width="match_parent"
+  android:layout_height="200dp"
+  android:background="@android:color/white"
+  app:layoutDescription="@xml/collapsible_toolbar_header_scene"
+  app:layout_constraintEnd_toEndOf="parent"
+  app:layout_constraintStart_toStartOf="parent"
+  app:layout_constraintTop_toTopOf="parent">
+  
+  <ImageView
+    android:id="@+id/image"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:scaleType="fitCenter"
+    android:src="@drawable/ic_emoji"
+    app:layout_constraintBottom_toTopOf="@+id/title"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_chainStyle="packed"
+    tools:ignore="ContentDescription" />
+  
+  <TextView
+    android:id="@+id/title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Android is awesome"
+    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/image"
+    tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

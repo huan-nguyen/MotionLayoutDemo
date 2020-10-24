@@ -11,6 +11,7 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.MotionLayoutDemo"
     tools:ignore="AllowBackup">
+    <activity android:name=".CollapsibleToolbarDemo" />
     <activity android:name=".ViewHolderSwipeDemo" />
     <activity android:name=".BasicDemo" />
     <activity android:name=".MainActivity">
