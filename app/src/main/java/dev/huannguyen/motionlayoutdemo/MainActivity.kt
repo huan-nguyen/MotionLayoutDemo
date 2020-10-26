@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
             setOnClickListener { startActivity(Intent(this@MainActivity, T::class.java)) }
             val typedValue = TypedValue()
             context.theme.resolveAttribute(android.R.attr.selectableItemBackground, typedValue, true)
+            setTextAppearance(android.R.style.TextAppearance_Material_Large)
             setBackgroundResource(typedValue.resourceId)
         }
         binding.container.addView(view)
