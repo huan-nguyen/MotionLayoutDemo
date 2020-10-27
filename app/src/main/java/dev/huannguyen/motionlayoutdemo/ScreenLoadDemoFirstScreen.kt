@@ -7,16 +7,15 @@ import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityOptionsCompat.makeSceneTransitionAnimation
 import com.bumptech.glide.Glide
-import dev.huannguyen.motionlayoutdemo.databinding.TransitionDemoFirstDemoBinding
+import dev.huannguyen.motionlayoutdemo.databinding.ScreenLoadDemoFirstScreenBinding
 import kotlinx.android.parcel.Parcelize
 
-
-class TransitionDemoFirstScreen : AppCompatActivity() {
-    private lateinit var binding: TransitionDemoFirstDemoBinding
+class ScreenLoadDemoFirstScreen : AppCompatActivity() {
+    private lateinit var binding: ScreenLoadDemoFirstScreenBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = TransitionDemoFirstDemoBinding.inflate(layoutInflater)
+        binding = ScreenLoadDemoFirstScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.list.run {
@@ -28,11 +27,11 @@ class TransitionDemoFirstScreen : AppCompatActivity() {
                     .into(view)
 
                 view.setOnClickListener {
-                    val activity = this@TransitionDemoFirstScreen
+                    val activity = this@ScreenLoadDemoFirstScreen
                     view.transitionName = "photo"
                     val options = makeSceneTransitionAnimation(activity, view, view.transitionName)
 
-                    val intent = Intent(activity, TransitionDemoSecondScreen::class.java).apply {
+                    val intent = Intent(activity, ScreenLoadDemoSecondScreen::class.java).apply {
                         putExtra(KEY_LISTING, listing)
                     }
                     startActivity(intent, options.toBundle())

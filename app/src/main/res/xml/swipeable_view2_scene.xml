@@ -17,15 +17,16 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/delete"
             app:layout_constraintTop_toTopOf="parent" />
-        
-        <Constraint android:id="@id/title"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:translationX="0dp"
-          app:layout_constraintBottom_toBottomOf="parent"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:translationX="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </ConstraintSet>
 
@@ -43,11 +44,12 @@
             android:layout_width="72dp"
             android:layout_height="72dp"
             app:layout_constraintEnd_toStartOf="@id/delete" />
-    
-        <Constraint android:id="@id/title"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:translationX="-144dp" />
+
+        <Constraint
+            android:id="@id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:translationX="-144dp" />
 
     </ConstraintSet>
 

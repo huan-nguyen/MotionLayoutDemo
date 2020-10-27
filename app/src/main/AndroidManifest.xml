@@ -13,8 +13,8 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.MotionLayoutDemo"
     tools:ignore="AllowBackup">
-    <activity android:name=".TransitionDemoSecondScreen"></activity>
-    <activity android:name=".TransitionDemoFirstScreen" />
+    <activity android:name=".ScreenLoadDemoSecondScreen"></activity>
+    <activity android:name=".ScreenLoadDemoFirstScreen" />
     <activity android:name=".CollapsibleToolbarDemo" />
     <activity android:name=".ViewHolderSwipeDemo" />
     <activity android:name=".BasicDemo" />
