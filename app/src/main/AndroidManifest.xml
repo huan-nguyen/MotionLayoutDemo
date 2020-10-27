@@ -3,6 +3,8 @@
   xmlns:tools="http://schemas.android.com/tools"
   package="dev.huannguyen.motionlayoutdemo">
   
+  <uses-permission android:name="android.permission.INTERNET" />
+  
   <application
     android:allowBackup="true"
     android:icon="@mipmap/ic_launcher"
@@ -11,6 +13,8 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.MotionLayoutDemo"
     tools:ignore="AllowBackup">
+    <activity android:name=".TransitionDemoSecondScreen"></activity>
+    <activity android:name=".TransitionDemoFirstScreen" />
     <activity android:name=".CollapsibleToolbarDemo" />
     <activity android:name=".ViewHolderSwipeDemo" />
     <activity android:name=".BasicDemo" />

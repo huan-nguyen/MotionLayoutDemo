@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         addDemo<BasicDemo>("Basic Demo")
         addDemo<ViewHolderSwipeDemo>("ViewHolder Swipe Demo")
         addDemo<CollapsibleToolbarDemo>("Collapsible Toolbar Demo")
+        addDemo<TransitionDemoFirstScreen>("Screen Transition Demo")
     }
 
     private inline fun <reified T: Activity> addDemo(name: String) {
