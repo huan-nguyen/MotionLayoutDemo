@@ -11,7 +11,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Constraint
-            android:id="@id/turnOffNotification"
+            android:id="@id/notification"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -40,7 +40,7 @@
             app:layout_constraintEnd_toEndOf="parent" />
 
         <Constraint
-            android:id="@id/turnOffNotification"
+            android:id="@id/notification"
             android:layout_width="72dp"
             android:layout_height="72dp"
             app:layout_constraintEnd_toStartOf="@id/delete" />
@@ -59,7 +59,7 @@
         <OnSwipe
             app:dragDirection="dragStart"
             app:onTouchUp="autoComplete"
-            app:touchAnchorId="@id/turnOffNotification"
+            app:touchAnchorId="@id/notification"
             app:touchAnchorSide="start" />
     </Transition>
 </MotionScene>
